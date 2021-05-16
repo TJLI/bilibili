@@ -1,0 +1,44 @@
+-i E:\YUV\KristenAndSara_1280x720_60.yuv -wdt 1280 -hgt 720  -br 1000 -usecase 0 -preset 0 -iper 60 -cutree 1 -fr 30  -psnr 1  -threads 4  -rc 0  -inPrefetchFrms 1 -inFileCache 1 -dct8x8 1 -b E:\VC0.bs -rec 1 -o  E:\VC0.yuv
+  
+-i E:\YUV\KristenAndSara_1280x720_60.yuv -wdt 1280 -hgt 720  -br 1000  -usecase  1 -preset 0 -iper 60  -threads 4  -psnr 1 -aq 0 -rc 2  -cutree 1 -aq 1  -inPrefetchFrms 1  -inFileCache 1  -b E:\VC0.bs -rec 1 -o  E:\VC0.yuv  
+  
+-i E:\YUV\KristenAndSara_1280x720_60.yuv  -encabac 1 -wdt 1280 -hgt 720  -br 1000 -usecase 6 -preset -3 -psnr 1 -ssim 1 -iper 250 -maxqp 40 -minqp 18 -firstimd 1 -firstifactor 0.5  --dct8x8 1 -rc 1 -thread 2 -b E:\VC0.bs -rec 1 -o  E:\VC0.yuv  
+
+-i E:\YUV\KristenAndSara_1280x720_60.yuv -wdt 1280 -hgt 720  -usecase 0 -preset 0 -iper 60 -threads 4 -psnr 1 -aq 0 -rc 2 -cutree 1 -aq 1  -inPrefetchFrms 1 -inFileCache 1 -dct8x8 1 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv  
+
+-i E:\YUV\KristenAndSara_1280x720_60.yuv -wdt 1280 -hgt 720 -usecase  1 -preset 0 -iper 60  -threads 4  -psnr 1 -aq 0 -rc 2  -cutree 1 -aq 1    -inPrefetchFrms 1  -inFileCache 1 -encabac 1 -dct8x8 1 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv  
+https://code.byted.org/MFT/byte264/merge_requests/623
+
+
+-i E:\YUV\KristenAndSara_1280x720_60.yuv -wdt 1280 -hgt 720 -usecase 0 -psnr 1 -aq 0  -threads 1  -preset -2   -psnrm 0 -dct8x8 1  -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+-i E:\YUV\KristenAndSara_1280x720_60.yuv -wdt 1280 -hgt 720 -usecase 6 -preset 0 -psnr 0 -ssim 0 -iper 250 -maxqp 40 -minqp 18 -firstimd 1 -firstifactor 0.5 -encabac 1 -dct8x8 1 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+-i E:\YUV\KristenAndSara_1280x720_60.yuv -wdt 1280 -hgt 720 -usecase 0 -psnr 1 -aq 0 -rc 0  -threads 1  -preset -2   -inPrefetchFrms 1  -inFileCache 1 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+
+-i E:\YUV\group_dark_320x180_15.yuv -wdt 320 -hgt 180 -fr 15 -br 350 -maxrate 350 -minrate 315 -vbvbuf 350 -rc 1 -usecase 6 -preset -3 -psnr 1 -ssim 1 -iper 250 -maxqp 40 -minqp 18 -firstimd 1 -firstifactor 0.5 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+-i E:\YUV\group_dark_320x180_15.yuv -wdt 320 -hgt 180 -fr 15 -br 350 -maxrate 350 -minrate 315 -vbvbuf 350 -rc 1  -usecase 6 -preset -1 -psnr 1 -ssim 1 -iper 250 -maxqp 40 -minqp 18 -firstimd 1 -firstifactor 0.5 -encabac 1 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+
+-i E:\YUV\BasketballPass_416x240_50.yuv -wdt 416 -hgt 240 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv -usecase 5 -rc 3 -crf 20 -frms 20 -preset -2 -threads 1 
+
+-i E:\YUV\BasketballPass_416x240_50.yuv -fr 50 -wdt 416 -hgt 240 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv -usecase 6 -rc 1 -br 50 -frms 20 -preset -2 -threads 1 
+
+
+-i E:\YUV\BasketballPass_416x240_50.yuv -wdt 320 -hgt 180 -preset 0 -usecase 2 -psnr 1  -aq 0  -threads 1  -psnrm 0 -inPrefetchFrms 1  -inFileCache 1  -preskipstep 2 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+-i E:\YUV\group_dark_320x180_15.yuv -wdt 320 -hgt 180 -usecase  0 -preset 0 -iper 60  -threads 4  -psnr 1 -aq 0 -rc 2  -cutree 1 -aq 1 -inPrefetchFrms 1  -inFileCache 1 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+-i E:\YUV\group_dark_320x180_15.yuv -wdt 320 -hgt 180 -usecase  0 -preset 0 -iper 60  -threads 4  -psnr 1 -aq 0 -rc 2 -cutree 1 -aq 1  -inPrefetchFrms 1  -inFileCache 1  -enAsymPart 1 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+
+-i E:\YUV\Kimono1_1920x1080_24.yuv -wdt 1920 -hgt 1080 -frms 10 -br 1000 -usecase 2 -preset 0 -iper 60  -threads 4  -psnr 1 -aq 0 -rc 2 -cutree 1 -aq 1  -inPrefetchFrms 1  -inFileCache 1  -enAsymPart 1 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+-i E:\YUV\BasketballPass_416x240_50.yuv -wdt 416 -hgt 240 -frms 5 -fr 15 -br 350 -maxrate 350 -minrate 315 -vbvbuf 350 -usecase  0 -preset 0 -iper 60  -threads 1 -psnr 1 -aq 0 -rc 2 -cutree 1 -aq 1  -inPrefetchFrms 1  -inFileCache 1  -enAsymPart 1 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+-i E:\YUV\Kimono1_1920x1080_24.yuv -wdt 1920 -hgt 1080 -frms 10 -br 1000  -usecase  0 -preset 0 -iper 60  -threads 4  -psnr 1 -aq 0 -rc 2  -cutree 1 -aq 1    -inPrefetchFrms 1  -inFileCache 1 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv
+
+
+-i E:\YUV\Kimono1_1920x1080_24.yuv -wdt 1920 -hgt 1080 -frms 10 -br 1000 -usecase 2 -preset -2 -rc 2 -br 1000 -maxrate 1200 -minrate 900 -maxqp 40 -minqp 15 -threads 2   -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv -recfgmd 6  -recfginterval 50
