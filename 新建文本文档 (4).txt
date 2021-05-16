@@ -24,6 +24,7 @@ https://code.byted.org/MFT/byte264/merge_requests/623
 
 -i E:\YUV\BasketballPass_416x240_50.yuv -wdt 416 -hgt 240 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv -usecase 5 -rc 3 -crf 20 -frms 20 -preset -2 -threads 1 
 
+
 -i E:\YUV\BasketballPass_416x240_50.yuv -fr 50 -wdt 416 -hgt 240 -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv -usecase 6 -rc 1 -br 50 -frms 20 -preset -2 -threads 1 
 
 
@@ -42,3 +43,6 @@ https://code.byted.org/MFT/byte264/merge_requests/623
 
 
 -i E:\YUV\Kimono1_1920x1080_24.yuv -wdt 1920 -hgt 1080 -frms 10 -br 1000 -usecase 2 -preset -2 -rc 2 -br 1000 -maxrate 1200 -minrate 900 -maxqp 40 -minqp 15 -threads 2   -b E:\VC0.264 -rec 1 -o  E:\VC0.yuv -recfgmd 6  -recfginterval 50
+
+
+Test1add
